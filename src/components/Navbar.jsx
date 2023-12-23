@@ -6,7 +6,7 @@ const Navbar = () => {
         <img src={movieIcon} className="w-10" />
         <h1 className="text-size text-white">Moviehh</h1>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-9">
         <a href="#" className="text-white">
           Home
         </a>
@@ -18,7 +18,7 @@ const Navbar = () => {
         </a>
       </div>
       <button className="text-darkBlue bg-white px-4 py-2 rounded-md">
-          Login
+        Login
       </button>
     </nav>
   );
