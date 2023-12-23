@@ -1,14 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { useEffect, useState } from "react";
+import "./App.css";
+import Person from "./Person";
+import SearchField from "./components/SearchField";
+import Navbar from "./components/Navbar";
+//5b9a579d
+// http://www.omdbapi.com/?i=tt3896198&apikey=5b9a579d
 function App() {
-  const [count, setCount] = useState(0)
+  const apiUrl = "http://www.omdbapi.com/?i=tt3896198&apikey=5b9a579d";
 
-  return (
-    <div className="flex justify-center">Movie App</div>
-  )
+  return <div className="">
+    <Navbar/>
+    <SearchField/>
+  </div>;
 }
 
-export default App
+export default App;
