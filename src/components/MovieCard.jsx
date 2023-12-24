@@ -2,21 +2,22 @@ import React from "react";
 
 const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
   return (
-    <div className="border-white bg-darkBlue" key={imdbID}>
-      <div>
-        <p className="text-white">{Year}</p>
-      </div>
+    <div className="border-white bg-darkBlue inline-block" key={imdbID}>
+      {/* <div>
+        <p className="text-black">{Year}</p>
+      </div> */}
 
       <div>
         <img
           src={Poster !== "N/A" ? Poster : "https://via.placeholder.com/400"}
           alt={Title}
-        className="w-[400px] h-[400px]"/>
+        className="w-[1435px] h-[400px] flex items-center justify-center"/>
       </div>
 
       <div>
-        <span>{Type}</span>
-        <h3>{Title}</h3>
+        <span className="text-white">{Year}</span>
+        <div className="text-white">{Type}</div>
+        <h3 className="text-white">{Title}</h3>
       </div>
     </div>
   );

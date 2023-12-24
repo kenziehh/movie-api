@@ -4,16 +4,16 @@ const Navbar = () => {
     <nav className="flex bg-darkBlue p-6 justify-between">
       <div className="flex items-center gap-2">
         <img src={movieIcon} className="w-10" />
-        <h1 className="text-size text-white">Moviehh</h1>
+        <h1 className="text-size text-white text-4xl">Moviehh</h1>
       </div>
-      <div className="flex items-center gap-9">
-        <a href="#" className="text-white">
+      <div className="flex items-center gap-9 sm:hidden md:hidden">
+        <a href="#" className="text-white sm:hidden md:hidden" >
           Home
         </a>
-        <a href="#" className="text-white">
+        <a href="#" className="text-white sm:hidden md:hidden">
           About
         </a>
-        <a href="#" className="text-white">
+        <a href="#" className="text-white sm:hidden md:hidden">
           Contact
         </a>
       </div>
